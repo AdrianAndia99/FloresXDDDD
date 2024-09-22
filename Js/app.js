@@ -2,7 +2,7 @@ let Titulo = document.title;
 
 window.addEventListener('blur', () => {
     Titulo = document.title;
-    document.title = "No te vallas, regresa :(";
+    document.title = "No te vayas, regresa :(";
 })
 
 window.addEventListener('focus', () => {
@@ -70,7 +70,7 @@ function DibujarFlor(x, y, NumeroPetalos, RadioXPetalo, RadioYPetalo, AltoTrazo)
       ctx.moveTo(x, y);
       ctx.lineTo(x, NuevaY);
       ctx.lineWidth = 3;
-      ctx.strokeStyle = 'black';
+      ctx.strokeStyle = 'darkgreen';
       ctx.stroke();
       NuevaY += AltoTallo;
       setTimeout(DibujarTallo, 100);
@@ -106,7 +106,7 @@ function DibujarFlor(x, y, NumeroPetalos, RadioXPetalo, RadioYPetalo, AltoTrazo)
         // Dibuja el centro de la flor
         ctx.beginPath();
         ctx.arc(x, y, 10, 0, Math.PI * 2);
-        ctx.fillStyle = 'white';
+        ctx.fillStyle = 'orange';
         ctx.fill();
       }
       dibujarSiguientePetalo();
@@ -124,7 +124,7 @@ function DibujarFlorSinTallo(x, y, NumeroPetalos, RadioXPetalo, RadioYPetalo, Al
       ctx.moveTo(x, y);
       ctx.lineTo(x, NuevaY);
       ctx.lineWidth = 3;
-      ctx.strokeStyle = 'black';
+      ctx.strokeStyle = 'darkgreen';
       ctx.stroke();
       NuevaY += AltoTallo;
       setTimeout(DibujarTallo, 100);
@@ -146,7 +146,7 @@ function DibujarFlorSinTallo(x, y, NumeroPetalos, RadioXPetalo, RadioYPetalo, Al
         // Dibuja el centro de la flor
         ctx.beginPath();
         ctx.arc(x, y, 10, 0, Math.PI * 2);
-        ctx.fillStyle = 'white';
+        ctx.fillStyle = 'orange';
         ctx.fill();
       }
       dibujarSiguientePetalo();

@@ -1,7 +1,7 @@
 body {
     margin: 0;
-    font-family: 'Inclusive Sans', sans-serif;
-    background: linear-gradient(70deg, blue, purple, pink);
+    font-family: 'Caveat', cursive;
+    background: linear-gradient(70deg, rgb(101, 226, 191), rgb(151, 181, 240), rgb(165, 247, 179));
 }
 
 h1 {
@@ -37,7 +37,7 @@ canvas {
 }
 
 .Texto h2 {
-    font-size: 50px;
+    font-size: 70px;
 }
 
 #B12 {
@@ -93,6 +93,9 @@ canvas {
     text-align: center;
     animation: aparecer 0.5s ease-out;
 }
+#res {
+    font-size: 30px; 
+}
 
 @keyframes aparecer {
     0% {
@@ -111,7 +114,7 @@ canvas {
 
 @media (max-width: 468px) {
     body {
-        background: linear-gradient(100deg, blue, purple, pink);
+        background: linear-gradient(100deg, rgb(101, 226, 191), rgb(248, 188, 248), rgb(165, 247, 179));
 
     }
 }
